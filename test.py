@@ -7,8 +7,6 @@ import doctest
 # they should be added here
 
 import cogs.basic
-import cogs.courseInfo
-import cogs.number_utils
 
 test_modules = [
     cogs.basic,
@@ -25,7 +23,7 @@ def load_tests(tests):
 if __name__ == '__main__':
     """
     runs the tests
-    
+
     """
     tests = unittest.TestSuite()
     test = load_tests(tests)
@@ -33,5 +31,3 @@ if __name__ == '__main__':
     # get the exit code and return when failed
     ret = not runner.run(tests).wasSuccessful()
     sys.exit(ret)
-
-
