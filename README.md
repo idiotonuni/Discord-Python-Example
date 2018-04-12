@@ -15,13 +15,23 @@ You'll need to install some packages first. These are included in the
 
 Linux:
 ```bash
-python3.6 -m pip install -r requirements.txt
-sudo apt-get install libffi-dev python3.6-dev
+python3 -m pip install -r requirements.txt
+# only required for doing voice on Linux environments
+sudo apt-get install libffi-dev python3-dev
 ```
 
-Windows: `todo`
+See the [discord.py documentation](http://discordpy.readthedocs.io/en/rewrite/intro.html#installing)
+for why the additional tools are necessary.
 
-Mac: `todo`.
+Windows:
+```
+py -3 -m pip install -r requirements.txt
+```
+
+Mac:
+```
+python3 -m pip install -r requirements.txt
+```
 
 ## Setup
 
