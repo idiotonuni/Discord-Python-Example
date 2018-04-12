@@ -23,19 +23,19 @@ class BasicCog:
     # a channel, a server, or by a specific user
     @commands.cooldown(1, 60, commands.BucketType.user)
     @commands.command(name='echo')
-    async def echo(self, ctx, *, message='_echo_'):
-        await ctx.send(f'{ctx.author.mention} : {message}')
+    async def echo(self, ctx, *, message: str='_echo_'):
+        await ctx.send(ctx.author.mention + ' : ' + message)
 
     # sqrt command
     @commands.command(name='sqrt')
-    async def sqrt(self, ctx, num: int):
+    async def sqrt(self, ctx, *, num: int=0):
         await ctx.send(_sqrt(num))
 
 # add this cog to the bot
 def setup(bot):
     bot.add_cog(BasicCog(bot))
 
-def _sqrt(num: int):
+def _sqrt(num: float):
     """
     Example of how to include methods that can be easily tested
     
@@ -44,7 +44,8 @@ def _sqrt(num: int):
 
     """
 
-    return f'Sqrt({num}) = {math.sqrt(num)}'
+    return 'Sqrt(' + str(num) + ') = ' + str(math.sqrt(num))
+
 
 # optional, but helpful for testing via the shell
 if __name__ == '__main__':
