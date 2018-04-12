@@ -9,9 +9,7 @@ import doctest
 import cogs.basic
 
 test_modules = [
-    cogs.basic,
-    cogs.courseInfo,
-    cogs.number_utils
+    cogs.basic
 ]
 
 def load_tests(tests):
