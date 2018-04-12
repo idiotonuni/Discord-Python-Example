@@ -5,9 +5,11 @@ See also [CSSBot](https://github.com/Chris-Johnston/CSSBot), same idea just in C
 
 # Installation / Setup / Usage
 
-This project is meant for Python 3.6. Please insure that you have that
-Python 3.6 or higher installed. You can check this using `python --version`
+This project is meant for Python 3.5 and up. Please insure that you have that
+Python 3.5 or higher installed. You can check this using `python --version`
 or `python3 --version`.
+
+Python 3.5 is shipped by default in the latest versions of Ubuntu.
 
 ## Prerequisitess
 You'll need to install some packages first. These are included in the
@@ -55,13 +57,12 @@ python3 -m pip install -r requirements.txt
 
 Run the following command:
 ```bash
-python3.6 main.py
+python3 main.py
 ```
 
 The first lines should read something like:
 ```
-discordpy
-1.0.0a
+using discordpy version 1.0.0a
 Logged in SomeUser - 1234567890
 Version 1.0.0a
 ```
@@ -71,7 +72,7 @@ Version 1.0.0a
 Tests can be run with the following command:
 
 ```bash
-python3.6 test.py
+python3 test.py
 ```
 
 The example module contains examples on how tests can be written.
