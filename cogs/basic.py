@@ -26,7 +26,7 @@ class BasicCog:
     async def echo(self, ctx, *, message='_echo_'):
         await ctx.send(f'{ctx.author.mention} : {message}')
 
-    # github command
+    # sqrt command
     @commands.command(name='sqrt')
     async def sqrt(self, ctx, num: int):
         await ctx.send(_sqrt(num))
