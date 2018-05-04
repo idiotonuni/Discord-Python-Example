@@ -1,4 +1,4 @@
-# CSSBot_Py (barebones)
+# Discord-python-Example
 A barebones example Discord bot, written in Python 3.6 using the [discord.py](https://github.com/Rapptz/discord.py) library.
 
 See also [CSSBot](https://github.com/Chris-Johnston/CSSBot), same idea just in C#.
