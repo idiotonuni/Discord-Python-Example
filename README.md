@@ -67,16 +67,6 @@ Logged in SomeUser - 1234567890
 Version 1.0.0a
 ```
 
-## Running Tests
-
-Tests can be run with the following command:
-
-```bash
-python3 test.py
-```
-
-The example module contains examples on how tests can be written.
-
 # Contributing
 
 This bot is intended to serve as an example. Either use this code as a reference or a base to make your own bot!
