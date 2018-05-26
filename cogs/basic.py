@@ -17,6 +17,9 @@ class BasicCog:
         # replies back to the command context with the
         # text "Pong!"
         await ctx.send("Pong!")
+    @commands.command()
+    async def best(self, ctx):
+        await ctx.send("Daniel.")
 
 # add this cog to the bot
 def setup(bot):

@@ -32,7 +32,7 @@ print('using discordpy version', discord.__version__)
 
 # the command prefix should be something unique, many bots already use !, ., and / for their prefixes
 # you can do any string, 'hey you stupid bot ' would totally work
-client = commands.Bot(command_prefix='>>', description='https://github.com/UWB-ACM/CSSBot_Py')
+client = commands.Bot(command_prefix='!', description='ManSlug\'s bot')
 
 # this is where extensions are added by default
 default_extensions = ['cogs.basic']
